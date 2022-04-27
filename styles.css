@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: aqua;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.user-container {
+    height: 100vh;
+    margin-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+:root {
+    --dark-color: black;
+    --bar-color: grey;
+}
+
+.col {
+    flex-grow: 1;
+    border: 1px dashed red;
+    display: flex;
+    justify-content: flex-end;
+}
+
