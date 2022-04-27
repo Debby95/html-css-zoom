@@ -4,14 +4,27 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dark-color: black;
+    --bar-color: #222222;
+    --button-color: #4A4A4A;
+}
+
 img {
-    width: 200px;
-    height: 120px;
+    width: 150px;
+    height: 100px;
     object-fit: cover;
 }
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+svg {
+    width: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .container {
@@ -23,15 +36,14 @@ a {
 }
 
 .user-container {
-    height: 100vh;
-    margin-top: 50px;
     padding-left: 40px;
     padding-right: 40px;
 }
 
-:root {
-    --dark-color: black;
-    --bar-color: grey;
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bar-color);
 }
 
 .col {
@@ -39,5 +51,18 @@ a {
     border: 1px dashed red;
     display: flex;
     justify-content: flex-end;
+    padding-bottom: 50px;
 }
 
+.col-small{
+    border: 1px dashed red;
+    display: flex;
+    padding-bottom: 50px;
+    gap: 40px;
+}
+
+.end-meeting-button {
+    background-color: var(--button-color);
+    color: red;
+    padding: 30px 30px;
+}
