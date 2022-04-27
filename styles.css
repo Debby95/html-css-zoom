@@ -8,6 +8,7 @@
     --dark-color: black;
     --bar-color: #222222;
     --button-color: #4A4A4A;
+    --text-color: white;
 }
 
 img {
@@ -18,7 +19,7 @@ img {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--text-color)
 }
 
 svg {
@@ -30,39 +31,58 @@ svg {
 .container {
     max-width: 1600px;
     margin: 0 auto;
-    background-color: aqua;
     padding-left: 40px;
     padding-right: 40px;
+    
 }
 
-.user-container {
-    padding-left: 40px;
-    padding-right: 40px;
+.users-container {
+    background-color: var(--dark-color);
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .button-container {
-    display: flex;
-    justify-content: space-between;
     background-color: var(--bar-color);
 }
 
 .col {
-    flex-grow: 1;
-    border: 1px dashed red;
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    background-color: var(--dark-color);
+    padding-top: 5px;
+}
+
+.speaker-view {
+    background-color: var(--button-color);
+    padding: 5px 10px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.fullscreen {
+    background-color: var(--button-color);
+    padding: 2px 3px;
+    border-radius: 5px;
+    display: flex;
 }
 
 .col-small{
-    border: 1px dashed red;
     display: flex;
-    padding-bottom: 50px;
     gap: 40px;
+    padding-left: 10px;
+    flex-grow: 1;
 }
 
 .end-meeting-button {
     background-color: var(--button-color);
     color: red;
-    padding: 30px 30px;
+    padding: 35px 24px;
 }
+
+
+
